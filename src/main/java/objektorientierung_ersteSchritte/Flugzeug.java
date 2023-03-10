@@ -3,6 +3,15 @@ package objektorientierung_ersteSchritte;
 import java.time.Duration;
 
 public class Flugzeug {
+
+    /*
+    "sitzplätze", um die Anzahl der Sitze des Flugzeugs zu speichern.
+    "flugzeugmarke", um den Namen oder die Marke des Flugzeugs zu speichern.
+    "flugzeit", um die Dauer des Fluges in Minuten zu speichern.
+    "reiseZiel", um das Ziel des Fluges zu speichern.
+    "ausgangsLand", um das Land zu speichern, in dem der Flug beginnt.
+    */
+
     private int sitzplätze;
     private String flugzeugmarke;
     private long flugzeit;
@@ -78,5 +87,6 @@ public class Flugzeug {
     public void berechneFlugzeit(){
         this.flugzeit = (long) (Math.random() * 1000);
     }
+
     //endregion
 }
