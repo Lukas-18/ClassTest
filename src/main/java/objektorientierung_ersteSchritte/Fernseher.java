@@ -1,6 +1,6 @@
 package objektorientierung_ersteSchritte;
 
-public class Fernseher {
+public class Fernseher implements ElektronischeGeraete{
 
     private boolean istAn = false;
     private int aktuellerSender;
@@ -29,11 +29,13 @@ public class Fernseher {
         this.aktuellerSender =+ _difference;
     }
 
-    public void schalteAn(){
+    @Override
+    public void anschalten(){
         this.istAn = true;
     }
 
-    public void schalteAus(){
+    @Override
+    public void ausschalten(){
         this.istAn = false;
     }
 

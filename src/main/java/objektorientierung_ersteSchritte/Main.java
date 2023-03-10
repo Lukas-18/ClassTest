@@ -10,11 +10,11 @@ public class Main {
 
     public static void main (String[] args){
 
-        boing777.berechneFlugzeit();
+        /*boing777.berechneFlugzeit();
         System.out.println(boing777.getAusgangsLand() + " -> " + boing777.getReiseziel());
         boing777.fliegen();
         System.out.println(boing777.getAusgangsLand() + " -> " + boing777.getReiseziel());
-        System.out.println("Flugzeit beträgt: " + boing777.getFlugzeit() + " Minuten");
+        System.out.println("Flugzeit beträgt: " + boing777.getFlugzeit() + " Minuten");*/
 
         Handy e = new Handy();
         System.out.println(e.getArtNR());

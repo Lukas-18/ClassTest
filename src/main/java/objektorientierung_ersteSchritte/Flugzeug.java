@@ -18,16 +18,6 @@ public class Flugzeug extends Kosten{
     private String reiseZiel;
     private String ausgangsLand;
 
-    //extend
-
-    public double getPrice() {
-        return super.getPrice();
-    }
-
-    public void setPrice(double price) {
-        super.setPrice(price);
-
-    }
 
     //region Region:Konstruktor
     public Flugzeug() {

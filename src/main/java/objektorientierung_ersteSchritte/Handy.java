@@ -1,10 +1,11 @@
 package objektorientierung_ersteSchritte;
 
-public class Handy {
+public class Handy implements ElektronischeGeraete{
 
     public static int NewArtNR = 1;
 
     private int ArtNR;
+    private boolean istAn = false;
 
 
     public Handy() {
@@ -17,5 +18,15 @@ public class Handy {
 
     public void setArtNR(int artNR) {
         ArtNR = artNR;
+    }
+
+    @Override
+    public void anschalten() {
+        this.istAn = true;
+    }
+
+    @Override
+    public void ausschalten() {
+        this.istAn = false;
     }
 }
