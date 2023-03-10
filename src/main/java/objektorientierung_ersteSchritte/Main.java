@@ -1,5 +1,8 @@
 package objektorientierung_ersteSchritte;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static Flugzeug boing777 = new Flugzeug(120, "Lufthansa", "Spanien", "Deutschland");
