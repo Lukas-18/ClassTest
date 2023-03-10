@@ -1,34 +1,35 @@
 package objektorientierung_ersteSchritte;
 
-import javax.swing.plaf.synth.Region;
+import java.time.Duration;
 
 public class Flugzeug {
-    private int sitzplaetze;
+    private int sitzplätze;
     private String flugzeugmarke;
-    private String reiseziel;
+    private long flugzeit;
+    private String reiseZiel;
     private String ausgangsLand;
 
-
+    //region Region:Konstruktor
     public Flugzeug() {
     }
 
-    public Flugzeug(String _name, String _ausgangsLand){
-        this.flugzeugmarke = _name;
+    public Flugzeug(int _sitzplätze, String _flugzeugmarke, String _reiseZiel, String _ausgangsLand){
+        this.flugzeugmarke = _flugzeugmarke;
         this.ausgangsLand = _ausgangsLand;
-    }
-    
-    public void fliegen(){
-
+        this.reiseZiel = _reiseZiel;
+        this.sitzplätze = _sitzplätze;
     }
 
-//region Region:Getter/Setter
+    //endregion
+
+    //region Region:Getter/Setter
 
     public String getFlugzeugmarke() {
         return flugzeugmarke;
     }
 
-    public void setFlugzeugmarke(String flugzeugmarke) {
-        this.flugzeugmarke = flugzeugmarke;
+    public void setFlugzeugmarke(String name) {
+        this.flugzeugmarke = name;
     }
 
     public String getReiseziel() {
@@ -39,6 +40,15 @@ public class Flugzeug {
         this.reiseziel = reiseziel;
     }
 
+
+    public long getFlugzeit() {
+        return flugzeit;
+    }
+
+    public void setFlugzeit(long flugzeit) {
+        this.flugzeit = flugzeit;
+    }
+
     public String getAusgangsLand() {
         return ausgangsLand;
     }
@@ -47,14 +57,26 @@ public class Flugzeug {
         this.ausgangsLand = ausgangsLand;
     }
 
-    public int getSitzplaetze(){
-        return sitzplaetze;
+    public int getSitzplätze(){
+        return sitzplätze;
     }
 
-    public void setSitzplaetze(int sitzplaetze){
-        this.sitzplaetze = sitzplaetze;
+    public void setSitzplätze(int sitzplätze){
+        this.sitzplätze = sitzplätze;
     }
 
-//endregion
+    //endregion
 
+    //region Region:Funktion
+        //Alt. switchCountrys
+    public void fliegen(){
+        String temp = this.ausgangsLand;
+        this.ausgangsLand = this.reiseZiel;
+        this.reiseZiel = temp;
+    }
+
+    public void berechneFlugzeit(){
+        this.flugzeit = (long) (Math.random() * 1000);
+    }
+    //endregion
 }
