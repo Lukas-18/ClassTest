@@ -2,7 +2,7 @@ package objektorientierung_ersteSchritte;
 
 import java.time.Duration;
 
-public class Flugzeug {
+public class Flugzeug extends Kosten{
 
     /*
     "sitzplätze", um die Anzahl der Sitze des Flugzeugs zu speichern.
@@ -17,6 +17,17 @@ public class Flugzeug {
     private long flugzeit;
     private String reiseZiel;
     private String ausgangsLand;
+
+    //extend
+
+    public double getPrice() {
+        return this.getPrice();
+    }
+
+    public void setPrice(double price) {
+        this.setPrice(price);
+
+    }
 
     //region Region:Konstruktor
     public Flugzeug() {

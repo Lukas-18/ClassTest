@@ -23,6 +23,10 @@ public class Main {
         Handy g = new Handy();
         System.out.println(g.getArtNR());
 
+        boing777.setPrice(500);
+
+        System.out.println(boing777.getPrice());
+
     }
 
 }
