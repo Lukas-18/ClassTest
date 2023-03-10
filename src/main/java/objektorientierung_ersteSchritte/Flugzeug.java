@@ -21,11 +21,11 @@ public class Flugzeug extends Kosten{
     //extend
 
     public double getPrice() {
-        return this.getPrice();
+        return super.getPrice();
     }
 
     public void setPrice(double price) {
-        this.setPrice(price);
+        super.setPrice(price);
 
     }
 
