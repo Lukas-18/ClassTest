@@ -9,11 +9,11 @@ public class FlugzeugTest {
     public void testFliegen() {
         Flugzeug flugzeug = new Flugzeug(150, "Boeing", "New York", "Berlin");
         assertEquals("Berlin", flugzeug.getAusgangsLand());
-        assertEquals("New York", flugzeug.getReiseziel());
+        assertEquals("New York", flugzeug.getReiseZiel());
 
         flugzeug.fliegen();
         assertEquals("New York", flugzeug.getAusgangsLand());
-        assertEquals("Berlin", flugzeug.getReiseziel());
+        assertEquals("Berlin", flugzeug.getReiseZiel());
     }
 
     @Test
