@@ -42,11 +42,11 @@ public class Flugzeug {
     }
 
     public String getReiseziel() {
-        return reiseziel;
+        return reiseZiel;
     }
 
     public void setReiseziel(String reiseziel) {
-        this.reiseziel = reiseziel;
+        this.reiseZiel = reiseziel;
     }
 
 
