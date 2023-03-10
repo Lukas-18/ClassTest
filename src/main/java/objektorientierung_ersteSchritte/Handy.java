@@ -1,6 +1,11 @@
 package objektorientierung_ersteSchritte;
 
-public class Handy implements ElektronischeGeraete{
+import lombok.*;
+
+@Getter
+@Setter
+
+public class Handy extends CPU implements ElektronischeGeraete{
 
     public static int NewArtNR = 1;
 
