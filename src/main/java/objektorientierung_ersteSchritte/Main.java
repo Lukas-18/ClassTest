@@ -6,11 +6,20 @@ public class Main {
     public static Flugzeug pe8 = new Flugzeug();
 
     public static void main (String[] args){
+
         boing777.berechneFlugzeit();
         System.out.println(boing777.getAusgangsLand() + " -> " + boing777.getReiseziel());
         boing777.fliegen();
         System.out.println(boing777.getAusgangsLand() + " -> " + boing777.getReiseziel());
         System.out.println("Flugzeit beträgt: " + boing777.getFlugzeit() + " Minuten");
+
+        Handy e = new Handy();
+        System.out.println(e.getArtNR());
+        Handy f = new Handy();
+        System.out.println(f.getArtNR());
+        Handy g = new Handy();
+        System.out.println(g.getArtNR());
+
     }
 
 }
